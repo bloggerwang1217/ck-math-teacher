@@ -1,0 +1,12 @@
+{
+  "name": "力為機器人",
+  "version": "1.0.0",
+  "description": "火爆背的熟熟熟",
+  "main": "bot.js",
+  "author": "Double",
+  "dependencies": {
+    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+    "discord.js": "^12.5.3",
+    "winston": "^3.3.3"
+  }
+}
