@@ -12,6 +12,7 @@ var bot = new Discord.Client({
    token: auth.token,
    autorun: true
 });
+worker: node bot.js
 bot.on("ready", function (evt) {
     logger.info("Connected");
     logger.info("Logged in as: ");
