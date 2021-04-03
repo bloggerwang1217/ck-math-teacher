@@ -12,11 +12,6 @@ var bot = new Discord.Client({
    token: auth.token,
    autorun: true
 });
-const port = process.env.PORT || 3338;
-// ...
-bot.listen(port, () => {
-  console.log(`Listening on http://localhost:${port}/`);
-});
 bot.on("ready", function (evt) {
     logger.info("Connected");
     logger.info("Logged in as: ");
