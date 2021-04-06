@@ -203,6 +203,8 @@ if (message.substring(0, 1) == '!') {
   ];
   switch(cmd) {
             case '96.4'://若輸入!96.4時執行
+            // Here we will create a random number. Math.random only creates a randomly generated number between 0 and 1.
+			const response = quote[Math.floor(Math.random() * quote.length)];
                 bot.sendMessage({
                     to: channelID,
                     message: response//機器人回覆這一行字
