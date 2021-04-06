@@ -196,13 +196,13 @@ if (message.substring(0, 1) == '!') {
  ' 我為什麼會稍微有點失智-因為高血壓的關係 ',
  ' 清淨本然 ',
  ' 把你的機機廢了 ',
- ' 我把那個皮條客倒過來 '
+ ' 我把那個皮條客倒過來 ',
+ ' 把他送進土城看～守所 ',
+ ' 靠，你為什麼不去戲劇系 '
    // You can add as many as you want
   ];
   switch(cmd) {
-            case '96.4'://若輸入!dice時執行
-			// Here we will create a random number. Math.random only creates a randomly generated number between 0 and 1.
-			const response = quote[Math.floor(Math.random() * quote.length)];
+            case '96.4'://若輸入!96.4時執行
                 bot.sendMessage({
                     to: channelID,
                     message: response//機器人回覆這一行字
