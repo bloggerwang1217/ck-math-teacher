@@ -236,6 +236,7 @@ if (message.substring(0, 1) == '!') {
                     to: channelID,
                     message: response//機器人回覆這一行字}
                 });
+             }
             break;
          }
      }
