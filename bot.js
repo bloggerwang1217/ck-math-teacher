@@ -230,8 +230,8 @@ if (message.substring(0, 1) == '!') {
                 });
             break;
             case '我不會我不會'://若輸入!96.4時執行
-                        const response = help[i];
                 for(var i=0;i<help.length;i++){
+                    const response = help[i];
                     bot.sendMessage({
                     to: channelID,
                     message: response//機器人回覆這一行字}
