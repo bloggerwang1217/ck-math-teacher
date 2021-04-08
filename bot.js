@@ -22,6 +22,8 @@ if (message.substring(0, 1) == '!') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
 //主要修改的部分
+        const help = '輸入「!我不會我不會」可召喚說明；
+                      輸入「!96.4」可召喚語錄'
         const quote = [
    ' 各位同學，你現在不可以做這種會消耗精力的事情 ',
  ' 飯島愛已經回到生命之家了 ',
@@ -223,6 +225,11 @@ if (message.substring(0, 1) == '!') {
                 bot.sendMessage({
                     to: channelID,
                     message: response//機器人回覆這一行字
+                });
+            case '我不會我不會'://若輸入!96.4時執行
+                bot.sendMessage({
+                    to: channelID,
+                    message: help//機器人回覆這一行字
                 });
             break;
          }
