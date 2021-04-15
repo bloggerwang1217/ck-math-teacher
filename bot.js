@@ -251,10 +251,9 @@ if (message.substring(0, 1) == '!') {
                 });
             break;
 	    case '加油':
-		  	const response = "307，加油";
                 bot.sendMessage({
                     to: channelID,
-                    message: response//機器人回覆這一行字
+                    message: "307，加油"//機器人回覆這一行字
                 });
 		break;
             case '我不會我不會'://若輸入!96.4時執行
