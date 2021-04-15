@@ -18,14 +18,14 @@ bot.on("ready", function (evt) {
     logger.info(bot.username + " - (" + bot.id + ")");
 });
 bot.on("message", function (user, userID, channelID, message, evt) {
-if (message.substring(0, 1) == '!') {
+if (message.substring(0, 1) == '說') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
 //主要修改的部分
         const help = [
-'輸入「!我不會我不會」可召喚說明',
-'輸入「!96.4」可召喚語錄',
-'輸入「!加油」可獲得力為的祝福'		
+'輸入「說我不會我不會」可召喚說明',
+'輸入「說是」可召喚語錄',
+'輸入「說加油」可獲得力為的祝福'		
   ];
         const quote = [
    ' 各位同學，你現在不可以做這種會消耗精力的事情 ',
@@ -242,7 +242,7 @@ if (message.substring(0, 1) == '!') {
    // You can add as many as you want
   ];
   switch(cmd) {
-            case '96.4'://若輸入!96.4時執行
+            case '是'://若輸入!96.4時執行
             // Here we will create a random number. Math.random only creates a randomly generated number between 0 and 1.
 			const response = quote[Math.floor(Math.random() * quote.length)];
                 bot.sendMessage({
