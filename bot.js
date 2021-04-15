@@ -24,7 +24,8 @@ if (message.substring(0, 1) == '!') {
 //主要修改的部分
         const help = [
 '輸入「!我不會我不會」可召喚說明',
-'輸入「!96.4」可召喚語錄'
+'輸入「!96.4」可召喚語錄',
+'輸入「!加油」可獲得力為的祝福',		
   ];
         const quote = [
    ' 各位同學，你現在不可以做這種會消耗精力的事情 ',
@@ -249,6 +250,12 @@ if (message.substring(0, 1) == '!') {
                     message: response//機器人回覆這一行字
                 });
             break;
+	    case '加油':
+		  	const response = "307，加油";
+                bot.sendMessage({
+                    to: channelID,
+                    message: response//機器人回覆這一行字
+                });
             case '我不會我不會'://若輸入!96.4時執行
                 for(var i=0;i<help.length;i++){
                     const response = help[i];
